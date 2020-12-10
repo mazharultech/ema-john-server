@@ -6,6 +6,12 @@ require('dotenv').config()
 
 const app = express()
 const port = 5000
+
+app.get('/', (req, res) => {
+  res.send('node server working');
+})
+
+
 app.use(bodyParser.json())
 app.use(cors())
 
